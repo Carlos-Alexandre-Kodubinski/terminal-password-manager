@@ -5,8 +5,8 @@ from contextlib import contextmanager
 parameters = dict(
     host='localhost',
     port=3306,
-    passwd='12345678',
-    user='root',
+    passwd='[your-password]',
+    user='[your-user]',
     database='pwd_manager',
     auth_plugin='mysql_native_password'
     )
