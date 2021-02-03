@@ -1,5 +1,3 @@
-from sys import path
-path.append('/home/carlos/PycharmProjects/meus_scripts/pwd-manager/.venv/lib/python3.8/site-packages')
 import xerox
 from sys import argv
 from conectionDB import new_connection
@@ -19,7 +17,7 @@ def get_pwd():
             print(f'ERROR: {e.msg}')
         else:
             pwd = cursor.fetchone()
-            print('Senha copiada para área de transferência!')
+            print('Your password has been copied to the clipboard!')
             return pwd[0]
 
 
@@ -36,7 +34,7 @@ def get_user():
             print(f'ERROR: {e.msg}')
         else:
             pwd = cursor.fetchone()
-            print('Usuário copiado para área de transferência!')
+            print('Your user has been copied to the clipboard!')
             return pwd[0]
 
 
@@ -53,7 +51,7 @@ def get_email():
             print(f'ERROR: {e.msg}')
         else:
             pwd = cursor.fetchone()
-            print('Email copiado para área de transferência!')
+            print('Your email has been copied to the clipboard!')
             return pwd[0]
 
 
@@ -75,7 +73,7 @@ def new_account():
         except ProgrammingError as e:
             print(f'ERROR: {e.msg}')
         else:
-            print('Nova conta adicionada! ')
+            print('New account has been added!')
             return ''
 
 
@@ -94,6 +92,7 @@ def authentication():
             if not input('PASSWORD PWD-MANAGER: ') == pwd:
                 exit()
 
+                
 authentication()
 
 functions = {
