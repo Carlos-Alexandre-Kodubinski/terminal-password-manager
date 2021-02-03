@@ -19,7 +19,7 @@ parameters:
 
 ### exemple
 
-image you want your password from facebook. what you need to do is type:
+imagine that you want your facebook password. what you need to do is type:
 
     pwd-manager -p facebook
 and your password will be on the clipboard.
