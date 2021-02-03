@@ -9,7 +9,7 @@ To add pwd-manager to the linux terminal, modify the .bash_aliases file in your 
 and save the file.
 now, to use pwd-manager, all you need to do is open a new terminal and type
     
-    pwd-manager [parameters] 'name-to-the-site'
+    pwd-manager [parameter] 'name-to-the-site'
 parameters:
 
     -p: return your password
